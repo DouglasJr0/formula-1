@@ -1,0 +1,121 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('fundo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.track {
+    width: 80%;
+    height: 300px;
+    border: 2px solid black;
+    position: relative;
+    margin: 50px auto;
+    background-color: #1e1f1e; /* Cor de fundo da pista */
+  }
+  
+  .start-line {
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+  }
+  
+  .finish-line {
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+  }
+  
+  .lane-divider {
+    width: 100%;
+    height: 2px;
+    background-color: yellow; /* Cor das linhas da pista */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .lane-separator {
+    width: 100%;
+    height: 2px;
+    background-color: white; 
+    position: absolute;
+  }
+  
+  .car {
+    position: absolute;
+    height: 40px; /* Ajuste a altura conforme necessário */
+  }
+  
+  #AstonMartin {
+    top: 10px; /* Ajuste a posição inicial do primeiro carro */
+  }
+  
+  #Ferrari {
+    top: 70px; /* Posição do segundo carro */
+  }
+  
+  #Hass {
+    top: 130px; /* Posição do terceiro carro */
+  }
+  
+  #McLaren {
+    top: 190px; /* Posição do quarto carro */
+  }
+  
+  #Mercedes {
+    top: 250px; /* Posição do quinto carro */
+  }
+  
+  .lane-separator:nth-child(2) {
+    top: 60px; /* Posição da primeira linha separadora */
+  }
+  
+  .lane-separator:nth-child(3) {
+    top: 120px; /* Posição da segunda linha separadora */
+  }
+  
+  .lane-separator:nth-child(4) {
+    top: 180px; /* Posição da terceira linha separadora */
+  }
+  
+  .lane-separator:nth-child(5) {
+    top: 240px; /* Posição da quarta linha separadora */
+  }
+  
+  .bet-form {
+    margin-top: 20px;
+  }
+  
+  .bet-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .bet-form select, .bet-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .bet-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bet-form button:hover {
+    background-color: #45a049;
+  }
+  

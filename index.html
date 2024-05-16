@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corrida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="track">
+    <div class="start-line"></div> 
+    <div class="finish-line"></div>
+    <div class="lane-divider"></div>
+    <div class="lane-divider"></div>
+    <div class="lane-divider"></div>
+    <div class="lane-divider"></div>
+    <div class="lane-divider"></div>
+    <img src="carro_aston.png" class="car" id="AstonMartin">
+    <img src="carro_ferrari.png" class="car" id="Ferrari">
+    <img src="carro_hass.png" class="car" id="Hass">
+    <img src="carro_mclaren.png" class="car" id="McLaren">
+    <img src="carro_mercedes.png" class="car" id="Mercedes">
+    
+    <div class="lane-separator"></div> 
+    <div class="lane-separator"></div>
+    <div class="lane-separator"></div>
+    <div class="lane-separator"></div>
+  </div>
+  
+  <div class="bet-form">
+    <h2>Aposte em um carro:</h2>
+    <form id="betForm">
+      <label for="carSelect">Escolha um carro:</label>
+      <select name="carSelect" id="carSelect">
+        <option value="car1">AstonMartin</option>
+        <option value="car2">Ferrari</option>
+        <option value="car3">Hass</option>
+        <option value="car4">McLaren</option>
+        <option value="car5">Mercedes</option>
+      </select>
+      <label for="betAmount">Valor da aposta:</label>
+      <input type="number" name="betAmount" id="betAmount" min="1">
+      <button type="submit">Apostar</button>
+    </form>
+  </div>
+  
+  <button onclick="startRace()">Iniciar Corrida</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
